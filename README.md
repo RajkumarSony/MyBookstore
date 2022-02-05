@@ -31,10 +31,10 @@ This is an simple online web store was made by using php , mysql and bootstrap.
   - Create a new database named “www_project”
   - Import “www_project.sql” file from database folder(See in downloaded folder)
 
-# more details and demo
-  - Email Id: rk.sony4848@gmail.com
-
 # Admin Login Details
   - Use the Same Login Form(Given on left Sidebar on front Page)
   - Username: admin@admin.com
   - Password: admin
+
+# More Details & Demo
+  - Email Id: rk.sony4848@gmail.com
