@@ -3,7 +3,7 @@
 	require_once "./template/header.php";
 ?>
 
-	<form class="form-horizontal" method="post" action="admin_verify.php">
+	<form class="form-horizontal" method="post" action="reg_verify.php">
 		<div class="form-group">
 			<label for="name" class="control-label col-md-4">UserName</label>
 			<div class="col-md-4">
@@ -16,13 +16,20 @@
 				<input type="password" name="pass" class="form-control">
 			</div>
 		</div>
-		<center>
-			<br/>
-			<button type="submit" name="submit" class="btn btn-primary">Login</button>
-			<br/><br/>
-			<a href="./register.php">I am new user!</a>
-		</center>
+        <div class="form-group">
+			<label for="pass" class="control-label col-md-4">Re-Password</label>
+			<div class="col-md-4">
+				<input type="password" name="repass" class="form-control">
+			</div>
+		</div>
+	    <center>
+                <br/>
+                <button type="submit" name="register" class="btn btn-primary">Register</button>
+                <br/><br/>
+                <a href="./admin.php">I have already an Account!</a>
+        </center>
 	</form>
+	
 
 <?php
 	require_once "./template/footer.php";

@@ -1,6 +1,6 @@
 <?php
 	function db_connect(){
-		$conn = mysqli_connect("localhost", "root", "", "www_project");
+		$conn = mysqli_connect("localhost", "root", "", "mystore");
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;

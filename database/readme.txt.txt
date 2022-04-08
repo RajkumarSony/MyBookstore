@@ -5,7 +5,7 @@ the database contains many tables.
 
 To change the localhost, username, password for connecting to database, change it only one time in 
 www_project/functions/database_functions.php -> db_connect() . Simple and fast
-The base is localhost , root , , www_project 
+The base is localhost , root , , mystore
 
 to connect the admin section, click the name Nghi Le Thanh at the bottom. 
 the name and pass for log in is admin , admin. Just to make it simple. 

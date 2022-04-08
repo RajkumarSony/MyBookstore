@@ -15,26 +15,22 @@
 		exit;
 	}
 
-	$name = mysqli_real_escape_string($conn, $name);
-	$pass = mysqli_real_escape_string($conn, $pass);
-	$pass = sha1($pass);
-
 	// get from db
-	$query = "SELECT name, pass from admin";
+	$query = "SELECT * from admin where name='".$name."' AND pass='".$pass."' limit 1";
 	$result = mysqli_query($conn, $query);
-	if(!$result){
-		echo "Empty data " . mysqli_error($conn);
+
+	if(mysqli_num_rows($result)==1){
+		$_SESSION['admin'] = true;
+		header("Location: admin_book.php");
 		exit;
 	}
-	$row = mysqli_fetch_assoc($result);
-
-	if($name != $row['name'] && $pass != $row['pass']){
+	else{
 		echo "Name or pass is wrong. Check again!";
 		$_SESSION['admin'] = false;
 		exit;
 	}
 
-	if(isset($conn)) {mysqli_close($conn);}
-	$_SESSION['admin'] = true;
-	header("Location: admin_book.php");
+	if(isset($conn)) {
+		mysqli_close($conn);
+	}
 ?>
