@@ -2,10 +2,10 @@
 
       	<footer>
         	<div class="text-muted pull-left">
-            	<a href="https://rajkumarsony.github.io" target="_blank"> RajkumarSony </a>
+            	<a href="" target="_blank"> Amol, Nitesh, Shubham </a>
         	</div>
         	<div class="text-muted pull-right">
-          		<a href="admin.php">Admin Login</a> 2019
+          		<a href="admin.php">Admin Login</a> 2022
         	</div>
       	</footer>
     </div> <!-- /container -->

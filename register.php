@@ -4,6 +4,7 @@
 ?>
 
 	<form class="form-horizontal" method="post" action="reg_verify.php">
+	<center><h1>SignUp Form</h1></center><br><br>
 		<div class="form-group">
 			<label for="name" class="control-label col-md-4">UserName</label>
 			<div class="col-md-4">
